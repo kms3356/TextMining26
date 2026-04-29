@@ -77,5 +77,6 @@ p = re.compile(r'(?P<word>\b\w+)\s+(?P=word)') # word그룹 재참조. 앞에 \b
 p.search('Paris in the the spring').group()
 
 # 전방탐색 : 조건만 확인하고 결과에선 제외하고 싶을때
-p = re.compile(".+(?=:)") # :이 뒤에 있는지 확인. ?= 대신 ?! 쓰면 :이 없는 문자열 매칭
-m = p.search("http://google.com") # http만 반환
+p = re.compile(".+(?=:)") # :이 뒤에 있는지 확인. ?= 대신 ?! 쓰면 :이 없는 문자열 매칭 Python(?! 2) : Python 글자 뒤에 숫자2가 없는 python반환. ^(?!.*admin).+$ : 시작부터 쭉 admin이 포함되어 있지 않은지 검사
+m = p.match("http://google.com") # http만 반환
+print(m.group())
