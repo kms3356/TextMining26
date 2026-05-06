@@ -48,6 +48,5 @@ def crawlMain(keyword):
         mer = mergeResultToList(news_data, news_corpus)
         if not mer: break
         start += display
-    saveJsonToCSV(news_corpus, 'news_corpus.csv')
     return news_corpus
 
