@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
-from mylib import myTextAnalyzer as ta
-from mylib import myStreamlitVisualizer as vis
+from Apps.WordFreqProj.mylib import myTextAnalyzer as ta
+from Apps.WordFreqProj.mylib import myStreamlitVisualizer as vis
 
 st.set_page_config(page_title="단어 빈도수 시각화", layout="wide")
 
