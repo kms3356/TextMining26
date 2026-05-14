@@ -1,7 +1,8 @@
 __pycache__/
 *.py[cod]
-
+data/
 .ipynb_checkpoints/
 .vscode/
-
+crawl/
+model/
 .env
