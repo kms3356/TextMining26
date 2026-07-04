@@ -6,3 +6,8 @@ data/
 crawl/
 model/
 .env
+/jobkorea
+/monthly_exam
+gpt_processing.log
+jobkorea_crawler.log
+/project01/data
